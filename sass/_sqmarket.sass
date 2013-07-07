@@ -1,0 +1,41 @@
+// Square Market
+=font-face($name, $weight, $style, $handle)
+
+  // IE9 Compat Modes
+  $src-eot:    url("../fonts/#{$handle}.eot")
+
+  // IE5-IE8
+  $src-eot-ie: url("../fonts/#{$handle}.eot?#iefix") format("embedded-opentype")
+
+  // IE9+, FF3.6+, Chrome 5+ (emerging standard)
+  $src-woff:   url("../fonts/#{$handle}.woff") format("woff")
+
+  // Safari 3.1+, FF 3.5+, Android, iOS post-4.2, Opera 10 (& IE9 if font has allow-embedding bit on)
+  $src-ttf:    url("../fonts/#{$handle}.ttf") format("truetype")
+
+  @font-face
+    font-family: "#{$name}"
+    src: $src-eot
+    src: $src-eot-ie, $src-woff, $src-ttf
+    font-weight: $weight
+    font-style: $style
+
+// Light
++font-face(sqmarket, 300, normal, sqmarket-light)
+// Light Italic
++font-face(sqmarket, 300, italic, sqmarket-lightitalic)
+
+// Regular
++font-face(sqmarket, 400, normal, sqmarket-regular)
+// Regular Italic
++font-face(sqmarket, 400, italic, sqmarket-regularitalic)
+
+// Medium
++font-face(sqmarket, 500, normal, sqmarket-medium)
+// Medium Italic
++font-face(sqmarket, 500, italic, sqmarket-mediumitalic)
+
+// Bold
++font-face(sqmarket, 700, normal, sqmarket-bold)
+// Bold Italic
++font-face(sqmarket, 700, italic, sqmarket-bolditalic)
