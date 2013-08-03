@@ -1,0 +1,147 @@
+// Square Icons
+=font-face($name, $weight, $style, $handle)
+
+  // IE9 Compat Modes
+  $src-eot:    url("../fonts/sqicons/#{$handle}.eot")
+
+  // IE5-IE8
+  $src-eot-ie: url("../fonts/sqicons/#{$handle}.eot?#iefix") format("embedded-opentype")
+
+  // IE9+, FF3.6+, Chrome 5+ (emerging standard)
+  $src-woff:   url("../fonts/sqicons/#{$handle}.woff") format("woff")
+
+  // Safari 3.1+, FF 3.5+, Android, iOS post-4.2, Opera 10 (& IE9 if font has allow-embedding bit on)
+  $src-ttf:    url("../fonts/sqicons/#{$handle}.ttf") format("truetype")
+
+  @font-face
+    font-family: "#{$name}"
+    src: $src-eot
+    src: $src-eot-ie, $src-woff, $src-ttf
+    font-weight: $weight
+    font-style: $style
+
++font-face(sqicons, 300, normal, sq-icons)
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before
+  font-family: 'sqicons'
+  content: attr(data-icon)
+  speak: none
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  text-align: inherit
+
+[class*="sq_icon"]
+  &:hover, &:active, &:focus
+    text-decoration: none
+  &:before
+    font-family: 'sqicons'
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    text-shadow: none
+    text-align: inherit
+
+.sq_icon_items:before
+  content: "\e012"
+
+.sq_icon_gift:before
+  content: "\e013"
+
+.sq_icon_gift_angled:before
+  content: "\e014"
+
+.sq_icon_dashboard:before
+  content: "\e015"
+
+.sq_icon_currency:before
+  content: "\e016"
+
+.sq_icon_check:before
+  content: "\e001"
+
+.sq_icon_responsive_logo:before
+  content: "\e01e"
+  @media (min-width: 320px)
+    content: "\e01d"
+
+.sq_icon_updates:before
+  content: "\e000"
+
+.sq_icon_support:before
+  content: "\e002"
+
+.sq_icon_strength:before
+  content: "\e003"
+
+.sq_icon_speed:before
+  content: "\e004"
+
+.sq_icon_sign:before
+  content: "\e005"
+
+.sq_icon_pricing:before
+  content: "\e006"
+
+.sq_icon_mail:before
+  content: "\e007"
+
+.sq_icon_favorite:before
+  content: "\e008"
+
+.sq_icon_easy:before
+  content: "\e009"
+
+.sq_icon_connected:before
+  content: "\e00a"
+
+.sq_icon_auditing:before
+  content: "\e00b"
+
+.sq_icon_starbucks:before
+  content: "\e00c"
+
+.sq_icon_security:before
+  content: "\e00d"
+
+.sq_icon_receipt:before
+  content: "\e00e"
+
+.sq_icon_rate:before
+  content: "\e00f"
+
+.sq_icon_profile:before
+  content: "\e010"
+
+.sq_icon_phone:before
+  content: "\e011"
+
+.sq_icon_location:before
+  content: "\e017"
+
+.sq_icon_close:before
+  content: "\e018"
+
+.sq_icon_visa:before
+  content: "\e01a"
+
+.sq_icon_navigation:before
+  content: "\e01b"
+
+.sq_icon_mastercard:before
+  content: "\e01c"
+
+.sq_icon_logotype:before
+  content: "\e01d"
+
+.sq_icon_jewel:before
+  content: "\e01e"
+
+.sq_icon_covered:before
+  content: "\e019"
