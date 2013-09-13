@@ -1,0 +1,79 @@
+$base-font-size: 14px
+$base-line-height: 22px
+$body-font-color: #5f6a7d
+$header-font-color: #2e3b4e
+
+*
+  +box-sizing(border-box)
+
+body
+  font-family: 'sqmarket', 'Hiragino Kaku Gothic Pro'
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  font-size: $base-font-size
+  line-height: $base-line-height
+  color: $body-font-color
+
+h1, h2, h3, h4, h5
+  text-transform: uppercase
+  color: $header-font-color
+
+h1, h2
+  font-weight: 100
+
+h1
+  font-size: 36px
+  line-height: 40px
+  margin-bottom: 5px
+  @media (min-width: 768px)
+    font-size: 44px
+    line-height: 52px
+    margin-bottom: 5px
+    &.epic
+      font-size: 54px
+      line-height: 60px
+      margin-bottom: 5px
+
+h2
+  font-size: 36px
+  line-height: 40px
+  margin-bottom: 5px
+
+h3
+  font-size: 24px
+  line-height: 31px
+  margin-bottom: 5px
+  font-weight: 300
+
+h4
+  font-size: 14px
+  font-weight: 500
+  letter-spacing: 0.09em
+
+h5
+  font-size: 11px
+  font-weight: 700
+  line-height: 1
+  padding-bottom: 23px
+  margin-bottom: 20px
+  border-bottom: 3px $header-font-color solid
+  letter-spacing: 1px
+  & + h2
+    margin-top: 30px
+
+p
+  font-weight: 400
+  margin-bottom: 22px
+  &:last-child
+    margin-bottom: 0
+  &.fine-print
+    font-size: 12px
+    line-height: 18px
+  // Just for style guide shit
+  &.style-spacing
+    margin-bottom: 88px
+
+.hiragino
+  h3, h4
+    font-family: 'sqmarket', 'ヒラギノ角ゴ Pro W6'
+    font-weight: bold
